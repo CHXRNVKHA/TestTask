@@ -1,0 +1,386 @@
+@charset "UTF-8";
+body {
+  font-family: 100% "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  width: 1920px;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(16, 16, 29, 0.9);
+}
+.header-container {
+  display: flex;
+}
+.header-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  color: white;
+  padding-top: 33px;
+  padding-bottom: 31px;
+}
+.header-title--blue {
+  color: #42A9ED;
+}
+.header .navigation .list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 487px;
+  width: 60%;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 43px;
+}
+.header .navigation .list-item {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+}
+.header .navigation .list-item:hover {
+  color: #43ABF0;
+}
+
+.describe {
+  background-image: url("./assets/work.png");
+  background-repeat: no-repeat;
+}
+.describe-title {
+  padding-top: 203px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+.describe-title--blue {
+  color: #3E9CDC;
+}
+.describe-title p {
+  margin: 0;
+}
+.describe-benefits {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 80px;
+}
+.describe-benefits p {
+  margin: 0;
+}
+.describe-benefits .list {
+  list-style-type: none;
+  padding-left: 1%;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.describe-benefits .list-item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.describe-buttons {
+  display: flex;
+  margin-top: 95px;
+  padding-bottom: 335px;
+  font-family: "Lato", sans-serif;
+}
+.describe-buttons--order {
+  background-color: #3E9CDC;
+  width: 183px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.describe-buttons--order:hover {
+  transition: background-color 1s, color 1s, border 1s;
+  background-color: white;
+  border: 1px solid #3E9CDC;
+  color: #3E9CDC;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.describe-buttons--info {
+  margin-left: 30px;
+  width: 183px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 0;
+  border: 1px solid #6F6D7B;
+  text-decoration: none;
+  color: #6F6D7B;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.describe-buttons--info:hover {
+  transition: background-color 1s, color 1s, border 1s;
+  background-color: #3E9CDC;
+  border: 1px solid white;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.order {
+  background-image: linear-gradient(rgba(16, 16, 29, 0.9), rgba(16, 16, 29, 0.9)), url("./assets/order-back.png");
+  padding-bottom: 150px;
+}
+.order-title {
+  margin: 0;
+  padding-top: 150px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  color: white;
+}
+.order-title--blue {
+  color: #3E9CDC;
+}
+.order-note {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #BBBBBB;
+  margin: 30px 0;
+}
+.order-workflow {
+  display: flex;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.order-workflow .list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  padding: 0 5% 0 4%;
+}
+.order-workflow .list-item--step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #286690;
+  border-radius: 50%;
+  background-color: #3E9CDC;
+}
+.order-workflow .list-item:not(:last-child):after {
+  display: flex;
+  content: "● ● ● ● ●";
+  margin-left: 7.4rem;
+  color: gray;
+  font-size: 0.85rem;
+  margin-top: -25%;
+  letter-spacing: 0.4rem;
+}
+.order-workflow .description {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.order-workflow .description-item {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+.order-workflow .description-item--text {
+  width: 11.8rem;
+  margin: 0;
+  padding: 0;
+}
+.order-form {
+  margin-top: 80px;
+}
+.order-form .line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.order-form .line .range {
+  width: 756px;
+  margin: 0;
+}
+.order-form .line .range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+.order-form .line .range-labels--description {
+  justify-self: flex-start;
+}
+.order-form .line .range-labels--percent {
+  justify-self: flex-end;
+}
+.order-form .line .file-input {
+  color: transparent;
+  width: 370px;
+  margin: 20px 0 0 26px;
+  padding: 17px 0px;
+}
+.order-form .line .file-input::before {
+  content: "ПРИКРЕПИТЬ ФАЙЛ";
+  color: #272733;
+  background: url("./assets/file_icon.png") no-repeat, linear-gradient(white, white);
+  background-position: 4.2rem 0.75rem;
+  background-size: 20px;
+  border: 1px solid #3E9CDC;
+  border-radius: 3px;
+  padding: 14px 109px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+.order-form .line .file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.order-form .line .file-input:hover::before {
+  border-color: black;
+}
+.order-form .line .file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.order-form .line .submit-btn {
+  width: 370px;
+  background-color: #3E9CDC;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 124.5px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 33%;
+}
+.order-form .line .submit-btn:hover {
+  transition: background-color 1s, color 1s, border 1s;
+  background-color: white;
+  border: 1px solid #3E9CDC;
+  color: #3E9CDC;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.order-form .line:not(:nth-child(1)) {
+  margin-top: 30px;
+}
+.order-form .field {
+  width: 345px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 12px 10px;
+  margin: 0;
+}
+
+.footer {
+  background: #3D4050;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.footer .vertical-line {
+  border-left: 1px solid #C3C3C3;
+  height: 18px;
+}
+.footer .copyright {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+}
+.footer .wallet {
+  display: flex;
+  width: 474px;
+  justify-content: space-around;
+  list-style: none;
+  color: #C3C3C3;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footer .wallet-item {
+  display: flex;
+}
+.footer .wallet-item--text {
+  margin-left: 0.5rem;
+}
+.footer .social {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  list-style: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footer .social-item {
+  display: flex;
+}
+.footer .social-item--text {
+  margin-left: 0.5rem;
+}
+.footer .social-item--icon {
+  margin-top: 0.15rem;
+}/*# sourceMappingURL=style.css.map */
